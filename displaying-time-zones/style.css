@@ -1,5 +1,5 @@
 body {
-    padding: 0rem;
+    padding: 10rem;
     margin: 0rem;
     background-color: whitesmoke;
     font-family: 'Inter', sans-serif;
@@ -13,6 +13,7 @@ body {
 .collectiveTimeZones h1 {
     font-size: 20px;
     padding: 5px;
+    margin: 0px;
     padding-left: 15px;
 }
 
@@ -20,30 +21,46 @@ body {
     display: flex;
 }
 
-@media (max-width: 991px) {
+.addressText {
+    line-height: 25%;  
+}
 
+.londonTime {
+    padding-right: 15px;
+}
+
+.collectiveTimeZones p {
+    padding-left: 40px;
+    margin-top: 5px;
+}
+
+@media (max-width: 991px) {
+    body {
+        padding: 10rem 5rem;
+    }
 }
 
 @media (max-width: 767px) {
-
+    body {
+        padding: 10rem 0rem;
+    }
 }
 
 @media (max-width: 478px) {
+    body {
+        padding: 10rem 0rem;
+        justify-content: space-evenly;
+    }
+
+    .londonTime {
+        padding-right: 0px;
+    }
+
+
     .collectiveTimeZones {
         flex-direction: column;
-        padding: 5rem;
-        text-align: center;
+        padding-left: 10rem;
     }
 
-    .titleHeader {
-        justify-content: center;
-    }
 
-    .LondonTime {
-        padding-bottom: 2rem;
-    }
-
-    .NewYorkTime {
-        padding-bottom: 2rem;
-    }
 }
