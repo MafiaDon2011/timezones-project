@@ -1,0 +1,49 @@
+body {
+    padding: 0rem;
+    margin: 0rem;
+    background-color: whitesmoke;
+    font-family: 'Inter', sans-serif;
+}
+
+.collectiveTimeZones {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.collectiveTimeZones h1 {
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.titleHeader {
+    display: flex;
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 478px) {
+    .collectiveTimeZones {
+        flex-direction: column;
+        padding: 5rem;
+        text-align: center;
+    }
+
+    .titleHeader {
+        justify-content: center;
+    }
+
+    .LondonTime {
+        padding-bottom: 2rem;
+    }
+
+    .NewYorkTime {
+        padding-bottom: 2rem;
+    }
+}
